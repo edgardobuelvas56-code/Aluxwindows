@@ -1,8 +1,213 @@
-[object Object]
-/* Paleta AluxWindows */
-.seo-header{background:linear-gradient(135deg,var(--dark-2),var(--dark))}
-.seo-card{background:linear-gradient(145deg,var(--white),var(--brand-soft))}
-.seo-card:hover{border-color:rgba(11,79,130,.35)}
-.related a:hover{border-color:var(--brand);color:var(--brand)}
-.seo-cta,.seo-footer{background:linear-gradient(135deg,var(--dark-2),var(--dark))}
-.breadcrumbs a{color:#D9EAF4}
+body.seo-page{
+  background:#fff;
+}
+
+.seo-header{
+  background:linear-gradient(135deg,var(--dark-2),var(--dark));
+  color:#fff;
+}
+
+.seo-header .navbar{
+  padding:20px 0;
+}
+
+.seo-nav{
+  display:flex;
+  gap:22px;
+  align-items:center;
+}
+
+.seo-nav a{
+  color:rgba(255,255,255,.84);
+  font-weight:600;
+}
+
+.seo-nav a:hover{
+  color:#fff;
+}
+
+.seo-hero{
+  width:min(1080px,92%);
+  margin:auto;
+  padding:80px 0 64px;
+}
+
+.breadcrumbs{
+  font-size:.86rem;
+  color:rgba(255,255,255,.62);
+  margin-bottom:18px;
+}
+
+.breadcrumbs a{
+  color:#D9EAF4;
+}
+
+.seo-hero h1{
+  max-width:900px;
+  font-size:clamp(2.5rem,5vw,4.8rem);
+  line-height:1;
+  letter-spacing:-.05em;
+  color:#fff;
+}
+
+.seo-hero>p:not(.eyebrow){
+  max-width:760px;
+  color:rgba(255,255,255,.8);
+  font-size:1.12rem;
+  margin:24px 0;
+}
+
+.seo-main{
+  width:min(1080px,92%);
+  margin:auto;
+}
+
+.seo-section{
+  padding:64px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.seo-section h2{
+  font-size:clamp(1.8rem,3vw,3rem);
+  margin-bottom:18px;
+  color:var(--dark);
+}
+
+.seo-section h3{
+  color:var(--dark);
+  margin:22px 0 8px;
+}
+
+.seo-section p,
+.seo-section li{
+  color:var(--muted);
+}
+
+.seo-section ul{
+  padding-left:20px;
+  margin-top:14px;
+}
+
+.seo-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:26px;
+}
+
+.seo-card{
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:24px;
+  background:linear-gradient(145deg,var(--white),var(--brand-soft));
+  transition:.25s ease;
+}
+
+.seo-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(11,79,130,.35);
+  box-shadow:var(--shadow);
+}
+
+.seo-card h3{
+  margin-top:0;
+}
+
+.faq details{
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:18px 20px;
+  margin:12px 0;
+  background:#fff;
+}
+
+.faq details[open]{
+  border-color:rgba(11,79,130,.28);
+  background:var(--brand-soft);
+}
+
+.faq summary{
+  font-weight:800;
+  color:var(--dark);
+  cursor:pointer;
+}
+
+.faq p{
+  margin-top:10px;
+}
+
+.related{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:20px;
+}
+
+.related a{
+  padding:10px 14px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  font-weight:700;
+  color:var(--dark);
+  background:#fff;
+}
+
+.related a:hover{
+  border-color:var(--brand);
+  color:var(--brand);
+}
+
+.seo-cta{
+  margin:54px 0;
+  background:linear-gradient(135deg,var(--dark-2),var(--dark));
+  color:#fff;
+  border-radius:28px;
+  padding:36px;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:center;
+}
+
+.seo-cta h2{
+  color:#fff;
+  margin-bottom:8px;
+}
+
+.seo-cta p{
+  color:rgba(255,255,255,.74);
+}
+
+.seo-footer{
+  background:linear-gradient(135deg,var(--dark-2),var(--dark));
+  color:white;
+  padding:34px 4%;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.seo-footer a,
+.seo-footer p{
+  color:rgba(255,255,255,.72);
+}
+
+@media(max-width:850px){
+  .seo-nav{
+    display:none;
+  }
+
+  .seo-hero{
+    padding:58px 0 48px;
+  }
+
+  .seo-grid{
+    grid-template-columns:1fr;
+  }
+
+  .seo-cta{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
