@@ -45,3 +45,45 @@
 .project-proof strong{color:var(--brand)}
 .contact-form{border:1px solid var(--line)}
 input:focus,select:focus,textarea:focus{outline:2px solid rgba(11,79,130,.18);border-color:var(--brand)}
+
+/* Integración del logo AluxWindows */
+.navbar .logo{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px 12px;
+  border-radius:16px;
+  background:rgba(255,255,255,.96);
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  border:1px solid rgba(255,255,255,.55);
+}
+
+.navbar .logo img{
+  height:58px;
+  width:auto;
+  max-width:220px;
+  object-fit:contain;
+  display:block;
+}
+
+.site-header .navbar .logo{
+  backdrop-filter:blur(8px);
+}
+
+.footer .logo{
+  background:transparent;
+  box-shadow:none;
+  border:0;
+  padding:0;
+}
+
+@media(max-width:900px){
+  .navbar .logo{
+    padding:6px 10px;
+    border-radius:14px;
+  }
+  .navbar .logo img{
+    height:48px;
+    max-width:180px;
+  }
+}
